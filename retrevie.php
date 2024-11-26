@@ -21,21 +21,21 @@ $result= json_decode($response,true);
 }  
 
 body{
-    background_color : var(--white);
+    background-color : var(--white);
 
 } 
 table {
- background_color : var(--white);
- border :;
+ background-color : var(--white);
+ border: var(#669BBC) 20px;
 }
 
 tr { 
-background_color: var(--red1);
+background-color: var(--red1);
 color : white ; 
 } 
 
 td{
-    background_color: var(--red2);
+    background-color: var(--red2);
     color : white ; 
 } 
 
