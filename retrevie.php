@@ -12,42 +12,83 @@ $result= json_decode($response,true);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment2</title> 
     <style>
-      :root {
-      --white: #FDF0D5;
-      --green:#d8e2dc; 
-      --pink1:#ffe5d9;
-      --pink2:#ffcad4;
-      --pink3:#f4acb7;
-      --purple:#9d8189;
-    }  
+  :root {
+    --white: #FDF0D5;
+    --green: #d8e2dc; 
+    --pink1: #ffe5d9;
+    --pink2: #ffcad4;
+    --pink3: #f4acb7;
+    --purple: #9d8189;
 
-    body{
-      background-color : var(--pink1);
-      font-family: "Lucida Console", "Courier New", monospace ;
-      font-size: 20px;
-    } 
-    table {
-      border:200px var(--purple) ;
-      border-radius: 10px;
-      width: 100%;
-      border-collapse: collapse;
-      margin: 50px 0;
-      font-size: 25px;
-      text-align: left;
+    --border-radius: 10px;
+    --font-family: "Arial", sans-serif;
   }
 
-  tr { 
-    background-color: var(--pink2);
-    color : white ;  
-    border:200px var();
-  } 
+  body {
+    background-color: var(--pink1);
+    color: var(--purple);
+    font-family: var(--font-family);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
 
-  td{
-      background-color: var(--pink3);
-      color : white ; 
-      border: 200px var() ;
-    } 
-  </style>
+  header {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 1em;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-bottom: 5px solid var(--pink3);
+  }
+
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+
+  th {
+    background-color: var(--pink3);
+    color: var(--white);
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+
+  tr:nth-child(odd) {
+    background-color: var(--pink2);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--green);
+  }
+
+  tr:hover {
+    background-color: var(--pink3);
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--purple);
+    padding: 10px;
+  }
+</style>
+
 </head>
 <body>
 <div class="overflow-auto">
