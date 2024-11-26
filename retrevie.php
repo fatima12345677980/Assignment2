@@ -11,43 +11,43 @@ $result= json_decode($response,true);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment2</title> 
-<style>
-    :root {
-    --white: #FDF0D5;
-    --red1: #C1121F;
-    --red2: #780000;
-    --blue: #003049;
-    --blue2:#669BBC ;
-    --green:#d8e2dc; 
+    <style>
+      :root {
+      --white: #FDF0D5;
+      --green:#d8e2dc; 
+      --pink1:#ffe5d9;
+      --pink2:#ffcad4;
+      --pink3:#f4acb7;
+      --purple:#9d8189;
+    }  
 
-    --pink1:#ffe5d9;
-    --pink2:#ffcad4;
-    --pink3:#f4acb7;
-    --purple:#9d8189;
-}  
+    body{
+      background-color : var(--pink1);
+      font-family: "Lucida Console", "Courier New", monospace ;
+      font-size: 20px;
+    } 
+    table {
+      border:200px var(--purple) ;
+      border-radius: 10px;
+      width: 100%;
+      border-collapse: collapse;
+      margin: 50px 0;
+      font-size: 25px;
+      text-align: left;
+  }
 
-body{
-    background-color : var(--white);
+  tr { 
+    background-color: var(--pink2);
+    color : white ;  
+    border:200px var();
+  } 
 
-} 
-table {
- background-color : var(--white);
- border:200px var() ;
-}
-
-tr { 
-background-color: var(--red1);
-color : white ;  
-border:200px var();
-} 
-
-td{
-    background-color: var(--red2);
-    color : white ; 
-    border: 200px var() ;
-} 
-
-</style>
+  td{
+      background-color: var(--pink3);
+      color : white ; 
+      border: 200px var() ;
+    } 
+  </style>
 </head>
 <body>
 <div class="overflow-auto">
