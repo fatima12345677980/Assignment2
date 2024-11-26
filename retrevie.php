@@ -18,6 +18,12 @@ $result= json_decode($response,true);
     --red2: #780000;
     --blue: #003049;
     --blue2:#669BBC ;
+    --green:#d8e2dc; 
+
+    --pink1:#ffe5d9;
+    --pink2:#ffcad4;
+    --pink3:#f4acb7;
+    --purple:#9d8189;
 }  
 
 body{
@@ -26,17 +32,19 @@ body{
 } 
 table {
  background-color : var(--white);
- border: var(#669BBC) 20px;
+ border:200px var() ;
 }
 
 tr { 
 background-color: var(--red1);
-color : white ; 
+color : white ;  
+border:200px var();
 } 
 
 td{
     background-color: var(--red2);
     color : white ; 
+    border: 200px var() ;
 } 
 
 </style>
